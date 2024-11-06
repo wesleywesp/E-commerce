@@ -73,7 +73,7 @@ Crie um banco de dados PostgreSQL e configure o nome, usuário e senha no arquiv
 properties
 Copiar código
 ```properties
-spring.datasource.url=jdbc:postgresql://localhost:5432/loja_roupas
+spring.datasource.url=jdbc:postgresql://localhost:5432/ecommerce
 spring.datasource.username=seu_usuario
 spring.datasource.password=sua_senha
 ```
