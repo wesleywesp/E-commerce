@@ -41,7 +41,7 @@ public class CartController {
     public ResponseEntity<?> clearCart(@AuthenticationPrincipal UserDetails user) {
         return cartService.clearCart(user);
     }
-    @PatchMapping("/item/{productId}")
+    @PatchMapping("/{productId}")
     @Transactional
     public ResponseEntity<?> updateCart(@PathVariable Long productId, @RequestBody UpdateProdutoDTO quantity,
                                         @AuthenticationPrincipal UserDetails user) {

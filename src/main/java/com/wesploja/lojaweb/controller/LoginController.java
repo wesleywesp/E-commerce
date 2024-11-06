@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
 
 @RestController
-@RequestMapping("/login")
+@RequestMapping("auth")
 public class LoginController {
     @Autowired
     private AuthenticationManager manager;
@@ -26,7 +26,7 @@ public class LoginController {
     @Autowired
     private UserService userService;
 
-    @PostMapping
+    @PostMapping("/login")
     public ResponseEntity<?> efetuarLogin(@RequestBody @Valid LoginInputDTO loginInput){
         var tokenAutenticacao = new UsernamePasswordAuthenticationToken(loginInput.username(),loginInput.password());
         var authentication = manager.authenticate(tokenAutenticacao);
@@ -34,7 +34,7 @@ public class LoginController {
         var tokenJWT = tokenService.generateToken((User) authentication.getPrincipal());
         return ResponseEntity.ok(new DadotTokenJWT(tokenJWT));
     }
-    @PostMapping("/cadastrar")
+    @PostMapping("/register")
     @Transactional
     public ResponseEntity<?> cadastrarUser(@RequestBody @Valid CadastrarUserDTO dto, UriComponentsBuilder uriBuilder) {
         return userService.cadastrarUser(dto, uriBuilder);

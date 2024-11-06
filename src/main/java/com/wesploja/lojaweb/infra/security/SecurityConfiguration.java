@@ -24,7 +24,7 @@ public class SecurityConfiguration {
                 .sessionManagement(sm-> sm.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(req -> {
                     // Acesso público
-                    req.requestMatchers("/login/**", "/categorias/**","/v3/api-docs/**",
+                    req.requestMatchers("/auth/**", "/categorias/**","/v3/api-docs/**",
                             "/swagger-ui.html","/swagger-ui/**","/admin/**", "/order").permitAll();
 
                     req.requestMatchers( "/users/**","/cart**").hasRole("CLIENT");

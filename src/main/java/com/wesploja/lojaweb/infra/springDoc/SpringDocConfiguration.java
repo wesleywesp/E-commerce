@@ -20,11 +20,11 @@ public class SpringDocConfiguration {
                                             .scheme("bearer")
                                             .bearerFormat("JWT")))
                     .info(new Info()
-                            .title("Loja Web")
+                            .title("E-Commerce API")
                             .description("API Rest da aplicação E-Commerce, com funcionalidades de cadastro de usuários, produtos, categorias e carrinho de compras.")
                             .contact(new Contact()
                                     .name("Time Backend")
-                                    .email("WespCompani@wesp.com"))
+                                    .email("WesleyWesp@gmail.com"))
                             .license(new License()
                                     .name("Apache 2.0")
                                     .url("http://WespCompanim/api/licenca")));
