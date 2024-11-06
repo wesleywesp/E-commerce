@@ -1,4 +1,4 @@
-# Projeto Loja de Roupas - Back-End
+# E-commerce - Back-End
 
 ##  Este é o back-end de um projeto de e-commerce para uma loja de roupas.
 ### Desenvolvido com Java e Spring Boot, o sistema fornece uma API RESTful para gerenciar produtos,
