@@ -1,9 +1,6 @@
 # E-commerce - Back-End
 
-##  Este é o back-end de um projeto de e-commerce para uma loja de roupas.
-### Desenvolvido com Java e Spring Boot, o sistema fornece uma API RESTful para gerenciar produtos,
-### usuários, carrinho de compras e pedidos. A autenticação é feita com tokens JWT,
-### garantindo a segurança dos dados dos clientes. O banco de dados utilizado é PostgreSQL.
+##  Este é o back-end de um projeto de e-commerce para uma loja de roupas. Desenvolvido com Java e Spring Boot, o sistema fornece uma API RESTful para gerenciar produtos, usuários, carrinho de compras e pedidos. A autenticação é feita com tokens JWT, garantindo a segurança dos dados dos clientes. O banco de dados utilizado é PostgreSQL.
 
 Funcionalidades
 Gerenciamento de Produtos: Endpoints para adicionar, atualizar, remover e consultar produtos disponíveis na loja.
