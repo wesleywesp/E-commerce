@@ -80,3 +80,6 @@ GET /pedidos: Lista os pedidos do usuário autenticado.
 Segurança
 A autenticação é realizada com JWT. Um token é gerado no login e deve ser incluído no header Authorization (Bearer Token) em todas as requisições protegidas.
 O Spring Security protege rotas específicas, permitindo acesso somente a usuários autenticados ou administradores, dependendo do endpoint.
+
+
+![swagger-ui](img/swagger-ui.png)
