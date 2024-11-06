@@ -1,4 +1,5 @@
-E-commerce - Back-End
+# Projeto Loja de Roupas - Back-End
+
 Este é o back-end de um projeto de e-commerce para uma loja de roupas. Desenvolvido com Java e Spring Boot, o sistema fornece uma API RESTful para gerenciar produtos, usuários, carrinho de compras e pedidos. A autenticação é feita com tokens JWT, garantindo a segurança dos dados dos clientes. O banco de dados utilizado é PostgreSQL.
 
 Funcionalidades
@@ -33,7 +34,6 @@ Passo a Passo para Executar
 Clone o repositório:
 
 bash
-# Projeto Loja de Roupas - Back-End
 
 ## Configuração do Projeto
 
@@ -44,31 +44,40 @@ Para começar, clone o repositório e navegue até o diretório do projeto:
 ```bash
 git clone https://github.com/wesleywesp/E-commerce.git
 cd loja-roupas-backend
+```
 Configuração do Banco de Dados
 Crie um banco de dados PostgreSQL e configure o nome, usuário e senha no arquivo application.properties:
 
 properties
 Copiar código
+```properties
 spring.datasource.url=jdbc:postgresql://localhost:5432/loja_roupas
 spring.datasource.username=seu_usuario
 spring.datasource.password=sua_senha
+```
 Configuração de JWT
 Defina uma chave secreta para o JWT no application.properties:
 
 properties
 Copiar código
+```properties
 jwt.secret=SuaChaveJWTSecreta
+jwt.expiration=86400000
+```
 Construção e Execução do Projeto
 Execute o projeto com Maven:
 
 bash
 Copiar código
+```bash
 ./mvnw spring-boot:run
+```
 Documentação da API
 A documentação da API pode ser acessada em http://localhost:8081/swagger-ui.html.
 
 Endpoints Principais
 Autenticação
+``` autenticação
 POST /auth/register: Registro de novos usuários.
 POST /auth/login: Login de usuários, retornando um token JWT.
 Produtos
@@ -92,5 +101,10 @@ GET /usuarios: Lista todos os usuários (apenas para administradores).
 GET /usuarios/{id}: Detalhes de um usuário específico.
 PUT /usuarios/{id}: Atualiza os dados de um usuário (apenas para administradores).
 DELETE /usuarios/{id}: Remove um usuário (apenas para administradores).
+```
 Segurança
-A autenticação é realizada com JWT. Um token é gerado no login e deve ser incluído no header Authorization (Bearer Token) em todas as requisições protegidas. O Spring Security protege rotas específicas, permitindo acesso somente a usuários autenticados ou administradores, dependendo do endpoint.
+A autenticação é realizada com JWT. Um token é gerado no login e deve ser incluído no header 
+Authorization (Bearer Token)
+em todas as requisições protegidas. 
+O Spring Security protege rotas específicas,
+permitindo acesso somente a usuários autenticados ou administradores, dependendo do endpoint.
