@@ -4,7 +4,7 @@ import com.wesploja.lojaweb.controller.dto.login.DadotTokenJWT;
 import com.wesploja.lojaweb.controller.dto.login.LoginInputDTO;
 import com.wesploja.lojaweb.controller.dto.user.CadastrarUserDTO;
 import com.wesploja.lojaweb.infra.security.TokenService;
-import com.wesploja.lojaweb.doman.user.User;
+import com.wesploja.lojaweb.domain.user.User;
 import com.wesploja.lojaweb.service.UserService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;

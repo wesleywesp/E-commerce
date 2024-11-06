@@ -1,13 +1,12 @@
-package com.wesploja.lojaweb.doman.user;
+package com.wesploja.lojaweb.domain.user;
 
 import com.wesploja.lojaweb.controller.dto.user.CadastrarUserDTO;
 import com.wesploja.lojaweb.controller.dto.user.UpdatUserDTO;
-import com.wesploja.lojaweb.doman.address.Address;
+import com.wesploja.lojaweb.domain.address.Address;
 import com.wesploja.lojaweb.infra.security.EncryptionService;
 import jakarta.persistence.*;
 import jakarta.validation.Valid;
 import lombok.*;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;

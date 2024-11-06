@@ -1,6 +1,6 @@
 package com.wesploja.lojaweb.repository;
 
-import com.wesploja.lojaweb.doman.order.Order;
+import com.wesploja.lojaweb.domain.order.Order;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

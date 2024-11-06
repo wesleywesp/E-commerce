@@ -1,6 +1,6 @@
 package com.wesploja.lojaweb.controller.dto.order;
 
-import com.wesploja.lojaweb.doman.order.OrderItem;
+import com.wesploja.lojaweb.domain.order.OrderItem;
 
 import java.math.BigDecimal;
 

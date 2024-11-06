@@ -1,6 +1,5 @@
 package com.wesploja.lojaweb.infra.validation.validarchechoutcart;
 
-import com.wesploja.lojaweb.doman.user.User;
 import com.wesploja.lojaweb.infra.exception.TratarCkechoutCart;
 
 import com.wesploja.lojaweb.repository.UserRepository;

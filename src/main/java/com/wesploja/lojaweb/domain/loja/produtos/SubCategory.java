@@ -1,4 +1,4 @@
-package com.wesploja.lojaweb.doman.loja.produtos;
+package com.wesploja.lojaweb.domain.loja.produtos;
 
 public enum SubCategory {
     CAMISAS,

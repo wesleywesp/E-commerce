@@ -1,7 +1,7 @@
 package com.wesploja.lojaweb.controller.dto.produtos.categoria;
 
-import com.wesploja.lojaweb.doman.loja.produtos.MainCategory;
-import com.wesploja.lojaweb.doman.loja.produtos.SubCategory;
+import com.wesploja.lojaweb.domain.loja.produtos.MainCategory;
+import com.wesploja.lojaweb.domain.loja.produtos.SubCategory;
 import jakarta.validation.constraints.NotBlank;
 
 public record AddCategoryDTO(

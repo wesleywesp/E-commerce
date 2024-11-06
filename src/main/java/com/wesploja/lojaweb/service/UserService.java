@@ -7,8 +7,8 @@ import com.wesploja.lojaweb.controller.dto.user.CadastrarUserDTO;
 import com.wesploja.lojaweb.controller.dto.user.DadosUserDTO;
 import com.wesploja.lojaweb.controller.dto.user.DethalharDadosUserDTO;
 import com.wesploja.lojaweb.controller.dto.user.UpdatUserDTO;
-import com.wesploja.lojaweb.doman.address.Address;
-import com.wesploja.lojaweb.doman.user.User;
+import com.wesploja.lojaweb.domain.address.Address;
+import com.wesploja.lojaweb.domain.user.User;
 
 import com.wesploja.lojaweb.infra.security.EncryptionService;
 import com.wesploja.lojaweb.repository.AddressRepository;
@@ -20,7 +20,6 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.util.UriComponentsBuilder;
-import org.springframework.data.domain.Pageable;
 
 import java.util.Optional;
 import java.util.stream.Collectors;

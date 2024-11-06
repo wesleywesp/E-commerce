@@ -1,9 +1,8 @@
-package com.wesploja.lojaweb.doman.order;
+package com.wesploja.lojaweb.domain.order;
 
-import com.wesploja.lojaweb.doman.user.User;
+import com.wesploja.lojaweb.domain.user.User;
 import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

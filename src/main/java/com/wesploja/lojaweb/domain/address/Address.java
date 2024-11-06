@@ -1,7 +1,7 @@
-package com.wesploja.lojaweb.doman.address;
+package com.wesploja.lojaweb.domain.address;
 
 import com.wesploja.lojaweb.controller.dto.adress.CadastrarAddressDTO;
-import com.wesploja.lojaweb.doman.user.User;
+import com.wesploja.lojaweb.domain.user.User;
 import jakarta.persistence.*;
 import jakarta.validation.Valid;
 import lombok.*;

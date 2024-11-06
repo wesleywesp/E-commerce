@@ -1,6 +1,9 @@
 # Projeto Loja de Roupas - Back-End
 
-Este é o back-end de um projeto de e-commerce para uma loja de roupas. Desenvolvido com Java e Spring Boot, o sistema fornece uma API RESTful para gerenciar produtos, usuários, carrinho de compras e pedidos. A autenticação é feita com tokens JWT, garantindo a segurança dos dados dos clientes. O banco de dados utilizado é PostgreSQL.
+##  Este é o back-end de um projeto de e-commerce para uma loja de roupas.
+### Desenvolvido com Java e Spring Boot, o sistema fornece uma API RESTful para gerenciar produtos,
+### usuários, carrinho de compras e pedidos. A autenticação é feita com tokens JWT,
+### garantindo a segurança dos dados dos clientes. O banco de dados utilizado é PostgreSQL.
 
 Funcionalidades
 Gerenciamento de Produtos: Endpoints para adicionar, atualizar, remover e consultar produtos disponíveis na loja.
@@ -10,7 +13,10 @@ Carrinho de Compras: Adição, remoção e atualização de itens no carrinho.
 Processamento de Pedidos: Criação e atualização de pedidos com status como "PENDING", "PAID", "SHIPPED","DELIVERED".
 Controle de Estoque: Atualização automática do estoque ao confirmar pedidos.
 Endpoints Administrativos: Funções exclusivas para administradores, permitindo a gestão completa dos produtos e pedidos.
-Tecnologias Utilizadas
+
+### Tecnologias Utilizadas
+``` Tecnologias Utilizadas
+----------------------------------------
 Java 21: Linguagem de programação principal.
 Spring Boot: Framework para construção do back-end.
 Spring Security: Gerenciamento de autenticação e autorização.
@@ -18,21 +24,37 @@ JWT (JSON Web Token): Autenticação de usuários com tokens seguros.
 Spring Data JPA: Mapeamento de dados para o banco de dados relacional.
 PostgreSQL: Banco de dados para armazenamento de informações.
 Docker: Contêineres para ambiente de desenvolvimento e produção.
-Arquitetura do Projeto
+Swagger: Documentação da API.
+Maven: Gerenciador de dependências.
+Lombok: Biblioteca para reduzir a verbosidade do código.
+----------------------------------------
+```
+
+### Arquitetura do Projeto
+```Arquitetura do Projeto
+---------------------------------------
 O projeto segue a arquitetura em camadas, com a separação das responsabilidades da seguinte forma:
 
 Controller: Define os endpoints da API e controla o fluxo de requisições e respostas.
 Service: Implementa a lógica de negócios, como validações e regras específicas para cada entidade.
 Repository: Responsável pela comunicação com o banco de dados via JPA.
-Model: Classes que representam as entidades do sistema, como Produto, Usuario, Pedido e Carrinho.
-Configuração do Projeto
+Domain: Classes que representam as entidades do sistema, como Produto, Usuario, Pedido e Carrinho.
+infra: Configurações do projeto, como segurança, banco de dados e propriedades.
+DTO: Objetos de transferência de dados para representar as informações trafegadas na API.
+Util: Classes utilitárias para funções comuns, como conversão de objetos e geração de tokens JWT.
+---------------------------------------
+```
+### Configuração do Projeto
+```Configuração do Projeto
+-----------------------------------------
 Pré-requisitos
+Clone o repositório e navegue até o diretório do projeto:
 Java 21 ou superior
 PostgreSQL
 Docker (opcional)
-Passo a Passo para Executar
-Clone o repositório:
-
+Maven
+--------------------------------------------
+````
 bash
 
 ## Configuração do Projeto
@@ -108,3 +130,6 @@ Authorization (Bearer Token)
 em todas as requisições protegidas. 
 O Spring Security protege rotas específicas,
 permitindo acesso somente a usuários autenticados ou administradores, dependendo do endpoint.
+
+![Swagger-ui](img/swagger-ui.png)
+

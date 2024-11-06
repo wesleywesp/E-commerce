@@ -1,7 +1,7 @@
 package com.wesploja.lojaweb.repository;
 
-import com.wesploja.lojaweb.doman.loja.cart.Cart;
-import com.wesploja.lojaweb.doman.user.User;
+import com.wesploja.lojaweb.domain.loja.cart.Cart;
+import com.wesploja.lojaweb.domain.user.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

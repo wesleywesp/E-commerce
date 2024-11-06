@@ -1,6 +1,6 @@
 package com.wesploja.lojaweb.infra.validation.validarchechoutcart;
 
-import com.wesploja.lojaweb.doman.loja.cart.Cart;
+import com.wesploja.lojaweb.domain.loja.cart.Cart;
 import com.wesploja.lojaweb.infra.exception.TratarCkechoutCart;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;

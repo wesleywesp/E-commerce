@@ -1,6 +1,6 @@
 package com.wesploja.lojaweb.repository;
 
-import com.wesploja.lojaweb.doman.address.Address;
+import com.wesploja.lojaweb.domain.address.Address;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

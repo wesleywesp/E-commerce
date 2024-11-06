@@ -1,6 +1,6 @@
 package com.wesploja.lojaweb.controller.dto.order;
 
-import com.wesploja.lojaweb.doman.order.Order;
+import com.wesploja.lojaweb.domain.order.Order;
 import com.wesploja.lojaweb.infra.security.EncryptionService;
 import org.springframework.beans.factory.annotation.Autowired;
 

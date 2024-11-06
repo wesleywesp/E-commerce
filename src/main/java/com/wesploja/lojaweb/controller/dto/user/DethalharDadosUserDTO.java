@@ -1,7 +1,7 @@
 package com.wesploja.lojaweb.controller.dto.user;
 
 import com.wesploja.lojaweb.controller.dto.adress.AddressSavedDTO;
-import com.wesploja.lojaweb.doman.user.User;
+import com.wesploja.lojaweb.domain.user.User;
 
 import java.util.List;
 

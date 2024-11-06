@@ -1,7 +1,7 @@
 package com.wesploja.lojaweb.service;
 
 import com.wesploja.lojaweb.controller.dto.produtos.categoria.AddCategoryDTO;
-import com.wesploja.lojaweb.doman.loja.produtos.Category;
+import com.wesploja.lojaweb.domain.loja.produtos.Category;
 import com.wesploja.lojaweb.repository.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

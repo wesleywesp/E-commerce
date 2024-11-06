@@ -1,4 +1,4 @@
-package com.wesploja.lojaweb.doman;
+package com.wesploja.lojaweb.domain;
 
 import com.wesploja.lojaweb.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;

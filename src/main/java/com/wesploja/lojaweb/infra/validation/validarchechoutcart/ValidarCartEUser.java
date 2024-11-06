@@ -1,6 +1,6 @@
 package com.wesploja.lojaweb.infra.validation.validarchechoutcart;
 
-import com.wesploja.lojaweb.doman.user.User;
+import com.wesploja.lojaweb.domain.user.User;
 import com.wesploja.lojaweb.repository.CartRepository;
 import com.wesploja.lojaweb.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;

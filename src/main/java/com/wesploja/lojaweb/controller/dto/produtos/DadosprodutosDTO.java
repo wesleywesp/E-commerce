@@ -1,6 +1,6 @@
 package com.wesploja.lojaweb.controller.dto.produtos;
 
-import com.wesploja.lojaweb.doman.loja.produtos.Produtos;
+import com.wesploja.lojaweb.domain.loja.produtos.Produtos;
 
 public record DadosprodutosDTO(Long id,
                                 String name,

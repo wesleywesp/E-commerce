@@ -1,4 +1,4 @@
-package com.wesploja.lojaweb.doman.user;
+package com.wesploja.lojaweb.domain.user;
 
 import org.springframework.security.core.GrantedAuthority;
 

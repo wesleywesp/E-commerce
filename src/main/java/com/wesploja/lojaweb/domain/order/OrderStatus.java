@@ -1,4 +1,4 @@
-package com.wesploja.lojaweb.doman.order;
+package com.wesploja.lojaweb.domain.order;
 
 public enum OrderStatus {
     PENDING,

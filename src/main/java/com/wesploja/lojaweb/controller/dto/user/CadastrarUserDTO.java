@@ -1,6 +1,5 @@
 package com.wesploja.lojaweb.controller.dto.user;
 
-import com.wesploja.lojaweb.doman.user.Perfil;
 import com.wesploja.lojaweb.infra.validation.validarpasword.PasswordMatch;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

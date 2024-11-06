@@ -1,6 +1,6 @@
-package com.wesploja.lojaweb.doman.order;
+package com.wesploja.lojaweb.domain.order;
 
-import com.wesploja.lojaweb.doman.loja.produtos.Produtos;
+import com.wesploja.lojaweb.domain.loja.produtos.Produtos;
 import jakarta.persistence.*;
 import lombok.*;
 

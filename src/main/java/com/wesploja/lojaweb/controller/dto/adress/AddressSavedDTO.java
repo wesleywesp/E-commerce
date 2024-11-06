@@ -1,6 +1,6 @@
 package com.wesploja.lojaweb.controller.dto.adress;
 
-import com.wesploja.lojaweb.doman.address.Address;
+import com.wesploja.lojaweb.domain.address.Address;
 
 import java.util.List;
 

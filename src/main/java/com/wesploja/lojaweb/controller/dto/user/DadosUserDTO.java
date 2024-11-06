@@ -1,6 +1,6 @@
 package com.wesploja.lojaweb.controller.dto.user;
 
-import com.wesploja.lojaweb.doman.user.User;
+import com.wesploja.lojaweb.domain.user.User;
 
 public record DadosUserDTO(String name, String email, String phone) {
 

@@ -1,6 +1,6 @@
-package com.wesploja.lojaweb.doman.loja.cart;
+package com.wesploja.lojaweb.domain.loja.cart;
 
-import com.wesploja.lojaweb.doman.loja.produtos.Produtos;
+import com.wesploja.lojaweb.domain.loja.produtos.Produtos;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
