@@ -33,32 +33,40 @@ Passo a Passo para Executar
 Clone o repositório:
 
 bash
-Copiar código
+# Projeto Loja de Roupas - Back-End
+
+## Configuração do Projeto
+
+### Clonando o Repositório
+
+Para começar, clone o repositório e navegue até o diretório do projeto:
+
+```bash
 git clone https://github.com/wesleywesp/E-commerce.git
 cd loja-roupas-backend
-Configuração do Banco de Dados:
-
+Configuração do Banco de Dados
 Crie um banco de dados PostgreSQL e configure o nome, usuário e senha no arquivo application.properties:
+
 properties
 Copiar código
 spring.datasource.url=jdbc:postgresql://localhost:5432/loja_roupas
 spring.datasource.username=seu_usuario
 spring.datasource.password=sua_senha
-Configuração de JWT:
-
+Configuração de JWT
 Defina uma chave secreta para o JWT no application.properties:
+
 properties
 Copiar código
 jwt.secret=SuaChaveJWTSecreta
-Construção e Execução do Projeto:
-
+Construção e Execução do Projeto
 Execute o projeto com Maven:
+
 bash
 Copiar código
 ./mvnw spring-boot:run
-Documentação da API:
+Documentação da API
+A documentação da API pode ser acessada em http://localhost:8081/swagger-ui.html.
 
-A documentação da API pode ser acessada em http://localhost:8081/swagger-ui.html .
 Endpoints Principais
 Autenticação
 POST /auth/register: Registro de novos usuários.
@@ -72,14 +80,17 @@ Carrinho
 POST /cart/: Adiciona um item ao carrinho.
 DELETE /cart/remover: Remove um item do carrinho.
 GET /cart: Lista os itens no carrinho.
-PUT /cart/{produtoid}quantidade: Atualiza a quantidade de um item no carrinho.
+PUT /cart/{produtoid}/quantidade: Atualiza a quantidade de um item no carrinho.
 POST /cart/checkout: Finaliza o pedido atual no carrinho.
 Pedidos
 POST /pedidos: Finaliza o pedido atual no carrinho.
 GET /pedidos: Lista os pedidos do usuário autenticado.
+GET /pedidos/{id}: Detalhes de um pedido específico.
+PUT /pedidos/{id}: Atualiza o status de um pedido (apenas para administradores).
+Usuários
+GET /usuarios: Lista todos os usuários (apenas para administradores).
+GET /usuarios/{id}: Detalhes de um usuário específico.
+PUT /usuarios/{id}: Atualiza os dados de um usuário (apenas para administradores).
+DELETE /usuarios/{id}: Remove um usuário (apenas para administradores).
 Segurança
-A autenticação é realizada com JWT. Um token é gerado no login e deve ser incluído no header Authorization (Bearer Token) em todas as requisições protegidas.
-O Spring Security protege rotas específicas, permitindo acesso somente a usuários autenticados ou administradores, dependendo do endpoint.
-
-
-![swagger-ui](img/swagger-ui.png)
+A autenticação é realizada com JWT. Um token é gerado no login e deve ser incluído no header Authorization (Bearer Token) em todas as requisições protegidas. O Spring Security protege rotas específicas, permitindo acesso somente a usuários autenticados ou administradores, dependendo do endpoint.
