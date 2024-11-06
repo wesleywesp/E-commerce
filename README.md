@@ -6,11 +6,11 @@ Gerenciamento de Produtos: Endpoints para adicionar, atualizar, remover e consul
 Autenticação e Autorização: Registro e login de clientes com segurança usando tokens JWT.
 Gerenciamento de Usuários: Visualização e atualização dos dados pessoais e histórico de pedidos dos clientes.
 Carrinho de Compras: Adição, remoção e atualização de itens no carrinho.
-Processamento de Pedidos: Criação e atualização de pedidos com status como "pendente", "pago", "enviado".
+Processamento de Pedidos: Criação e atualização de pedidos com status como "PENDING", "PAID", "SHIPPED","DELIVERED".
 Controle de Estoque: Atualização automática do estoque ao confirmar pedidos.
 Endpoints Administrativos: Funções exclusivas para administradores, permitindo a gestão completa dos produtos e pedidos.
 Tecnologias Utilizadas
-Java 17: Linguagem de programação principal.
+Java 21: Linguagem de programação principal.
 Spring Boot: Framework para construção do back-end.
 Spring Security: Gerenciamento de autenticação e autorização.
 JWT (JSON Web Token): Autenticação de usuários com tokens seguros.
@@ -26,9 +26,9 @@ Repository: Responsável pela comunicação com o banco de dados via JPA.
 Model: Classes que representam as entidades do sistema, como Produto, Usuario, Pedido e Carrinho.
 Configuração do Projeto
 Pré-requisitos
-Java 17 ou superior
+Java 21 ou superior
 PostgreSQL
-Docker (opcional, para execução em contêineres)
+Docker (opcional)
 Passo a Passo para Executar
 Clone o repositório:
 
